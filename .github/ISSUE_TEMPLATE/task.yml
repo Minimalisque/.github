@@ -1,0 +1,35 @@
+name: Task
+description: Setup, tooling, infrastructure, or other work that is not a user-visible feature.
+title: '<Imperative outcome, for example: Set up the portfolio web foundation>'
+type: Task
+assignees: ['Adnan-13']
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this is needed; link the Planning folder when there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      value: |
+        - In scope:
+        - Out of scope:
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: input
+    id: planning
+    attributes:
+      label: Planning
+      placeholder: 'Minimalisque-AI-DLC, branch <project>, aidlc-docs/planning/<work-name>/'
